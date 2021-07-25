@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Front-end Smart Fit
+> Esse é um pequeno projeto criado como base para a avaliação de habilidades técnicas para o papel de Front-end.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Preview
 
-## Available Scripts
+![preview](preview.png)
 
-In the project directory, you can run:
+# Proposta de Teste
+> A Smart Fit, por atuar no segmento de fitness, passou por várias mudanças na pandemia. Foi necessário desenvolver uma página para buscar unidades **fechadas** ou **abertas** para consulta e reserva.
 
-### `yarn start`
+> Optamos por não disponibilizar a API de buscas de unidades abertas/fechadas original para esse teste.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> Nesse teste você implementará as funcionalidades descritas abaixos. Tenha atenção com as regras de negócios definidas mais adiante.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+> Lembre-se de **seguir o layout proposto** em _material.
 
-### `yarn test`
+> Caso não consiga concluir todas as funcionalidade, lembre-se que o mais importante é termos noção da qualidade do código e de suas habilidades para projeto de sistemas. Nesse caso, complemente sua solução com comentários e documentação sobre como terminaria o teste.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Funcionalidades
+- Carrega unidades através da API `http://test-frontend-developer.s3.amazonaws.com/data/locations.json` com method `GET`
+- Busca todas as unidades
+- Busca unidades com filtros
+- Mostra previsão de resultados encontrados
+- Mostra unidades ao buscar
 
-### `yarn build`
+### Regras de negócio
+- Filtrar unidades abertas ou fechadas
+- Filtrar unidades por período de funcionamento
+- Caso não encontre unidades, mostrar uma menssagem ao usuário "Nenhuma unidade encontrada"
+- Validar para mostrar ícones corretos de acordo com o status
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Componentes Macro
+- Formulário de busca com filtros
+- Legenda
+- Lista de unidades
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Materiais disponíveis
+> Em `./_material` você encontra:
+- layout (mobile e desktop)
+- Textos
+- Cores
+- imagens
+- fonts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Entrega
+> No seu github, crie um repositório público com o teste e nos envie (caso queira enviar a url do app funcionando no Heroku, vercel ou equivalente seria um plus)
 
-### `yarn eject`
+> Não faça Pull Request para esse repositório.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Avaliação
+- Instruções no README.md
+- Lógica de programação
+- Qualidade de código
+- Qualidade de entrega (como se fosse para produção)
+- Fidelidade ao layout proposto
+- Responsive design
+- cross browser and device (mobile, tablet e desktop)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Plus
+- Teste unitário e e2e (teste apenas o que achar mais importante).
+- Travis CI
+- App em produção (Ex.: Heroku, Vercel e etc...)
+- Rodando com Docker localmente
