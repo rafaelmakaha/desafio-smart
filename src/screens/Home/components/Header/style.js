@@ -10,7 +10,11 @@ export const Container = styled.div`
 `
 
 export const SmartLogo = styled(Logo)`
-    height: 25%;
+    height: 40px;
     margin: 20px;
-    width: 15%;
+    width: 110px;
+    @media (max-width: 768px) {
+        height: 60px;
+        width: 140px;
+    }
 `

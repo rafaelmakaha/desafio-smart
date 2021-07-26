@@ -3,7 +3,7 @@ import { getGyms } from '../../services/api';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Subtitle from './components/Subtitle/Subtitle';
-import { Content, Divider, Title, WrapperTitle } from './style';
+import { Container, Content, Divider, Title, WrapperTitle } from './style';
 
 const Home = () => {
     const [gyms, setGyms] = useState({});
@@ -14,13 +14,17 @@ const Home = () => {
     return(
         <>
             <Header/>
-            <Content>
-                <WrapperTitle>
-                    <Title>Reabertura <br/> Smart Fit</Title>
-                    <Divider/>
-                </WrapperTitle>
-                <Subtitle />
-            </Content>
+            <Container>
+                <Content>
+                    <WrapperTitle>
+                        <Title>Reabertura <br/> Smart Fit</Title>
+                        <Divider/>
+                    </WrapperTitle>
+                    <Content>
+                        <Subtitle />
+                    </Content>
+                </Content>
+            </Container>
             <Footer />
         </>
     )

@@ -8,6 +8,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     gap: 8px;
-    justify-content: center;
-    width: 80%;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `
