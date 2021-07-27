@@ -10,8 +10,9 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 12px;
     width: 100%;
-    margin: 0% 10%;
+    margin: 0% 5%;
 `
 
 export const WrapperTitle = styled.div`
@@ -26,5 +27,10 @@ export const Title = styled.h1`
 
 export const Divider = styled.div`
     border-top: 6px solid ${COLORS.black};
-    width: 40%;
+    width: 8vw;
+    @media(max-width: 768px) {
+        width: 12vw;
+    }
 `
+
+export const Text = styled.p``

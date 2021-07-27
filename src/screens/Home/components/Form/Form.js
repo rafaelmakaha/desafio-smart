@@ -1,8 +1,51 @@
 import React from 'react';
+import { IMAGES } from 'settings/images';
+import Checkbox from '@material-ui/core/Checkbox';
+import { Btn, Container, Icon, IconText, Question, RadioButton, Text, WrapperBottom, WrapperButton, WrapperClosedGym, WrapperHeader, WrapperRadioButton, WrapperRow } from './style';
+import { COLORS } from 'settings';
 
-const Form = () => {
+const Form = (props) => {
     return (
         <>
+            <Container>
+                <WrapperHeader>
+                    <Icon src={IMAGES.iconHour}/>
+                    <IconText>Horário</IconText>
+                </WrapperHeader>
+                <Question>Qual período quer treinar?</Question>
+                <WrapperRow>
+                    <WrapperRadioButton>
+                        <RadioButton/>
+                        <Text>Manhã</Text>
+                    </WrapperRadioButton>
+                    <Text>06:00 às 12:00</Text>
+                </WrapperRow>
+                <WrapperRow>
+                    <WrapperRadioButton>
+                        <RadioButton/>
+                        <Text>Tarde</Text>
+                    </WrapperRadioButton>
+                    <Text>12:01 às 18:00</Text>
+                </WrapperRow>
+                <WrapperRow>
+                    <WrapperRadioButton>
+                        <RadioButton/>
+                        <Text>Noite</Text>
+                    </WrapperRadioButton>
+                    <Text>18:01 às 23:00</Text>
+                </WrapperRow>
+                <WrapperBottom>
+                    <WrapperClosedGym>
+                        <Checkbox />
+                        <Text>Exibir unidades fechadas</Text>
+                    </WrapperClosedGym>
+                    <Text>Resultados encontrados: {props?.gymCount?? 0}</Text>
+                </WrapperBottom>
+                <WrapperButton>
+                    <Btn color={COLORS.yellow} onClick={() => props.onSearch}>Encontrar unidade</Btn>
+                    <Btn onClick={() => props.onClear}>Limpar</Btn>
+                </WrapperButton>
+            </Container>
         </>
     );
 };
