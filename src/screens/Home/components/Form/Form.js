@@ -1,7 +1,7 @@
 import React from 'react';
 import { IMAGES } from 'settings/images';
 import Checkbox from '@material-ui/core/Checkbox';
-import { Btn, Container, Icon, IconText, Question, RadioButton, Text, WrapperBottom, WrapperButton, WrapperClosedGym, WrapperHeader, WrapperRadioButton, WrapperRow } from './style';
+import { Btn, Container, GymCount, Icon, IconText, Question, RadioButton, Text, WrapperBottom, WrapperButton, WrapperClosedGym, WrapperGymCount, WrapperHeader, WrapperRadioButton, WrapperRow } from './style';
 import { COLORS } from 'settings';
 
 const Form = (props) => {
@@ -51,7 +51,10 @@ const Form = (props) => {
                         <Checkbox checked={props.closed} onChange={props.handleClosed}/>
                         <Text>Exibir unidades fechadas</Text>
                     </WrapperClosedGym>
-                    <Text>Resultados encontrados: {props?.gymCount?? 0}</Text>
+                    <WrapperGymCount>
+                        <Text>Resultados encontrados: </Text>
+                        <GymCount>{props?.gymCount?? 0}</GymCount>
+                    </WrapperGymCount>
                 </WrapperBottom>
                 <WrapperButton>
                     <Btn color={COLORS.yellow} onClick={props.search}>Encontrar unidade</Btn>

@@ -67,6 +67,17 @@ export const WrapperClosedGym = styled.div`
 `
 export const Text = styled.p``
 
+export const WrapperGymCount = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+`
+
+export const GymCount = styled.p`
+    font-family: 'GothamBoldWoff2';
+`
+
 export const WrapperButton = styled.div`
     display: flex;
     flex-direction: row;
