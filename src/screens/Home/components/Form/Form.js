@@ -15,35 +15,47 @@ const Form = (props) => {
                 <Question>Qual período quer treinar?</Question>
                 <WrapperRow>
                     <WrapperRadioButton>
-                        <RadioButton/>
+                        <RadioButton 
+                            checked={props.period === 'manha'}
+                            onChange={props.handleSchedule}
+                            value='manha'
+                        />
                         <Text>Manhã</Text>
                     </WrapperRadioButton>
                     <Text>06:00 às 12:00</Text>
                 </WrapperRow>
                 <WrapperRow>
                     <WrapperRadioButton>
-                        <RadioButton/>
+                        <RadioButton 
+                            checked={props.period === 'tarde'}
+                            onChange={props.handleSchedule}
+                            value='tarde'
+                        />
                         <Text>Tarde</Text>
                     </WrapperRadioButton>
                     <Text>12:01 às 18:00</Text>
                 </WrapperRow>
                 <WrapperRow>
                     <WrapperRadioButton>
-                        <RadioButton/>
+                        <RadioButton 
+                            checked={props.period === 'noite'}
+                            onChange={props.handleSchedule}
+                            value='noite'
+                        />
                         <Text>Noite</Text>
                     </WrapperRadioButton>
                     <Text>18:01 às 23:00</Text>
                 </WrapperRow>
                 <WrapperBottom>
                     <WrapperClosedGym>
-                        <Checkbox />
+                        <Checkbox checked={props.closed} onChange={props.handleClosed}/>
                         <Text>Exibir unidades fechadas</Text>
                     </WrapperClosedGym>
                     <Text>Resultados encontrados: {props?.gymCount?? 0}</Text>
                 </WrapperBottom>
                 <WrapperButton>
-                    <Btn color={COLORS.yellow} onClick={() => props.onSearch}>Encontrar unidade</Btn>
-                    <Btn onClick={() => props.onClear}>Limpar</Btn>
+                    <Btn color={COLORS.yellow} onClick={props.search}>Encontrar unidade</Btn>
+                    <Btn onClick={props.clear}>Limpar</Btn>
                 </WrapperButton>
             </Container>
         </>
