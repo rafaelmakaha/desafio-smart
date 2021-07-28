@@ -14,6 +14,7 @@ export const Container = styled.div`
 `
 
 export const Status = styled.p`
+    font-family: 'GothamBoldWoff2';
     color: ${props => props.color};
     margin: 0px;
     font-weight: bold;

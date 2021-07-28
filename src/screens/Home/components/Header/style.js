@@ -18,3 +18,8 @@ export const SmartLogo = styled(Logo)`
         width: 140px;
     }
 `
+
+export const HeaderBottom = styled.div`
+    background-color: ${COLORS.white};
+    height: 50px;
+`

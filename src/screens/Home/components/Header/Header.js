@@ -1,11 +1,14 @@
 import React from 'react';
-import { Container, SmartLogo } from './style';
+import { Container, HeaderBottom, SmartLogo } from './style';
 
 const Header = () => {
     return (
-        <Container>
-            <SmartLogo/>
-        </Container>
+        <>
+            <Container>
+                <SmartLogo/>
+            </Container>
+            <HeaderBottom/>
+        </>
     );
 };
 
