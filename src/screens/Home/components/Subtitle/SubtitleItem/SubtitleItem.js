@@ -7,8 +7,8 @@ const SubtitleItem = (props) => {
             <Title>{props?.title}</Title>
             <WrapperInfo>
                 {
-                    props?.items?.map((item) => (
-                        <Wrapper>
+                    props?.items?.map((item,index) => (
+                        <Wrapper key={index}>
                             <Image src={item.image}/>
                             <Text>{item.message}</Text>
                         </Wrapper>

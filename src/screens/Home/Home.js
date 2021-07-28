@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { getGyms } from '../../services/api';
 import Footer from './components/Footer/Footer';
 import Form from './components/Form/Form';
+import GymCard from './components/GymCard/GymCard';
 import Header from './components/Header/Header';
 import Subtitle from './components/Subtitle/Subtitle';
-import { Container, Content, Divider, Text, Title, WrapperTitle } from './style';
+import { Container, Content, Divider, Text, Title, WrapperCards, WrapperTitle } from './style';
 
 const Home = () => {
-    const [gyms, setGyms] = useState({});
+    const [gyms, setGyms] = useState([]);
     const [search, setSearch] = useState({});
     
     useEffect(() => {
@@ -26,6 +27,13 @@ const Home = () => {
                     <Content>
                         <Form/>
                         <Subtitle />
+                        <WrapperCards>
+                            {
+                                gyms?.map((gym) => (
+                                    <GymCard gym={gym} key={gym.id}/>
+                                ))
+                            }
+                        </WrapperCards>
                     </Content>
                 </Content>
             </Container>

@@ -34,3 +34,13 @@ export const Divider = styled.div`
 `
 
 export const Text = styled.p``
+
+export const WrapperCards = styled.div`
+    display: grid;
+    justify-items: center;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    @media(max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+`

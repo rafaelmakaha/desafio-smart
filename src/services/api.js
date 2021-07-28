@@ -7,5 +7,5 @@ export const getGyms = async () => {
             method,
         })
         .then(response => response.json())
-        .then(r => {console.log(r)})
+        .then(data => data.locations)
 }
