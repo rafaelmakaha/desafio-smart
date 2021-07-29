@@ -1,5 +1,5 @@
 export const BACKEND = {
-    basePath: `http://test-frontend-developer.s3.amazonaws.com`,
+    basePath: process.env.REACT_APP_API,
     data: {
         route: '/data/locations.json',
         method: 'GET',
