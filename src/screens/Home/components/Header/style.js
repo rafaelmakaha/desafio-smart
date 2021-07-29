@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { COLORS } from "settings";
-import { ReactComponent as Logo } from '_material/images/logo.svg'
+import { COLORS } from '../../../../settings/colors'
+import { ReactComponent as Logo } from '../../../../_material/images/logo.svg'
 
 
 export const Container = styled.div`

@@ -1,7 +1,7 @@
 import React from 'react';
 import parse from 'html-react-parser';
-import { COLORS } from 'settings';
-import { IMAGES } from 'settings/images';
+import { COLORS } from '../../../../settings/colors';
+import { IMAGES } from '../../../../settings/images';
 import { Container, Description, Divider, GymName, Icon, InfoTitle, Status, WrapperIcons, WrapperInfo, WrapperSchedule } from './style';
 
 const GymCard = ({gym}) => {

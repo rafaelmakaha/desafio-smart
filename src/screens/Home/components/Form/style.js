@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Radio from '@material-ui/core/Radio';
 import { Button } from "@material-ui/core";
-import { COLORS } from "settings/colors";
+import { COLORS } from '../../../../settings/colors';
 
 export const Container = styled.div`
     display: flex;

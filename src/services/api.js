@@ -1,5 +1,5 @@
 import { BACKEND } from "../settings/backend"
-import { formatTime } from "utils";
+import { formatTime } from "../utils";
 
 export const getGyms = async () => {
     const url = BACKEND.basePath + BACKEND.data.route;

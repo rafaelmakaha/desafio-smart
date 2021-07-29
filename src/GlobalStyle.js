@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
-import GothamBookWoff2 from '_material/fonts/gotham-book.woff2'
-import GothamLightWoff2 from '_material/fonts/gotham-light.woff2'
-import GothamBoldWoff2 from '_material/fonts/gotham-bold.woff2'
-import GothamBlackWoff2 from '_material/fonts/gotham-black.woff2'
+import GothamBookWoff2 from './_material/fonts/gotham-book.woff2'
+import GothamLightWoff2 from './_material/fonts/gotham-light.woff2'
+import GothamBoldWoff2 from './_material/fonts/gotham-bold.woff2'
+import GothamBlackWoff2 from './_material/fonts/gotham-black.woff2'
 
 export const GlobalStyle = createGlobalStyle`
   @font-face {

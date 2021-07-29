@@ -1,4 +1,4 @@
-import { COLORS } from "settings/colors";
+import { COLORS } from "../../../../settings/colors";
 import styled from "styled-components";
 
 export const Container = styled.div`

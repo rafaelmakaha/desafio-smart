@@ -1,8 +1,8 @@
 import React from 'react';
-import { IMAGES } from 'settings/images';
+import { IMAGES } from '../../../../settings/images';
 import Checkbox from '@material-ui/core/Checkbox';
 import { Btn, Container, GymCount, Icon, IconText, Question, RadioButton, Text, WrapperBottom, WrapperButton, WrapperClosedGym, WrapperGymCount, WrapperHeader, WrapperRadioButton, WrapperRow } from './style';
-import { COLORS } from 'settings';
+import { COLORS } from '../../../../settings/colors';
 
 const Form = (props) => {
     return (

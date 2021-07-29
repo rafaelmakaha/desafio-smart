@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { compareSchedule } from 'utils';
+import { compareSchedule } from '../../utils';
 import { getGyms } from '../../services/api';
 import Footer from './components/Footer/Footer';
 import Form from './components/Form/Form';

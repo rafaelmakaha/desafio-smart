@@ -1,5 +1,5 @@
 import React from 'react';
-import { IMAGES } from 'settings/images';
+import { IMAGES } from '../../../../settings/images';
 import { Container } from './style';
 import SubtitleItem from './SubtitleItem/SubtitleItem';
 

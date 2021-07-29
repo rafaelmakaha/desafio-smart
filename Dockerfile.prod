@@ -2,6 +2,8 @@
 FROM node:12-alpine3.9 as build
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
+ENV REACT_APP_API=https://test-frontend-developer.s3.amazonaws.com
+RUN npm i react-scripts
 COPY ./package.json /app/
 COPY ./package-lock /app/
 RUN npm ci
